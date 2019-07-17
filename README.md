@@ -4,5 +4,6 @@ ___
 
 ### Changing a devices MAC Address
 
--first ensure device is visible with 'ifconfig' or 'iwconfig'
+- first ensure device is visible with `ifconfig` or `iwconfig`
 
+- next, take device down with `ifconfig <device name> down`
