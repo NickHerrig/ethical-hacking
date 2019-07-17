@@ -3,25 +3,34 @@ ___
 
 ### Changing your device's MAC Address
 
-- first, ensure device is visible with `ifconfig` or `iwconfig`
+- First, ensure device is visible with `ifconfig` or `iwconfig`
 
-- next, take device down with `ifconfig <device name> down`
+- Next, take device down with `ifconfig <device name> down`
  
-- next, change the MAC Address with `ifconfig <device name> hw ether <MAC Address>` where MAC Address follow format 00:00:00:00:00:00
+- Next, change the MAC Address with `ifconfig <device name> hw ether <MAC Address>` where MAC Address follow format 00:00:00:00:00:00
 
-- lastly, bring the device back online with `ifconfig <device name> up`
+- Lastly, bring the device back online with `ifconfig <device name> up`
 ___
 
 ### Change Wirless Adapter to Utilize Monitor Mode
 
-- first, ensure device is visible and not in monitor mode with `iwconfig`
+- First, ensure device is visible and not in monitor mode with `iwconfig`
 
-- next, bring down the device with `ifconfig <device name> down`
+- Next, bring down the device with `ifconfig <device name> down`
 
-- next, kill off processes that might interfere with aircrack-ng suit by running `airmon-ng check kill`
+- Next, kill off processes that might interfere with aircrack-ng suit by running `airmon-ng check kill`
 
-- next, update monitor mode by running `iwconfig <device name> mode monitor`
+- Next, update monitor mode by running `iwconfig <device name> mode monitor`
 
-- lastly, bring the device back online with `ifconfig <device name> up`
-
+- Lastly, bring the device back online with `ifconfig <device name> up`
 ___
+
+### Packet Sniffing Using Airodump-ng
+
+- To start packet sniffing, run `airodump-ng <device name>` where device name is your wireless adapter in monitor mode
+
+- To specify the band frequency, utilize the `--band` argument: 
+...`airodump-ng --band abg <device name>` will capture packets over 2.4 and 5 Ghz
+
+- In order to sniff packets on a specific network utilize the below command:
+...`airodump-ng --bssid <router MAC Address> --channel <channel number> --write <write file> <device name>`
