@@ -37,4 +37,13 @@ ___
 
    `airodump-ng --bssid <router MAC Address> --channel <channel number> --write <write file> <device name>`
 
-- 
+___
+
+### Deauthentication Attack with aireplay-ng
+
+- To disconnect any device from any router utilize the command:
+
+   aireplay-ng --deauth <# of packets> -a <Router MAC> -c <Client MAC> <device name>
+
+**DO NOT DO THIS TO A NETWORK OR DEVICE YOU DO NOT OWN OR HAVE PERMISSION TO...**
+   
