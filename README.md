@@ -31,10 +31,10 @@ ___
 
 - To specify the band frequency, utilize the `--band` argument
 
-...`airodump-ng --band abg <device name>` will capture packets over 2.4 and 5 Ghz simultaniously
+   `airodump-ng --band abg <device name>` will capture packets over 2.4 and 5 Ghz simultaniously
 
 - In order to sniff packets on a specific network utilize the below command
 
-...`airodump-ng --bssid <router MAC Address> --channel <channel number> --write <write file> <device name>`
+   `airodump-ng --bssid <router MAC Address> --channel <channel number> --write <write file> <device name>`
 
 - 
