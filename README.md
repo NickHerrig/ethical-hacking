@@ -1,6 +1,13 @@
 # Ethical Hacking Notes
 ___
 
+## The Rules
+
+- [x] Don't be a ass.
+- [x] Have Fun.
+- [ ] Learn Something New.
+___
+
 ### Changing your device's MAC Address
 
 - First, ensure device is visible with `ifconfig` or `iwconfig`
@@ -45,5 +52,17 @@ ___
 
    `aireplay-ng --deauth <# of packets> -a <Router MAC> -c <Client MAC> <device name>`
 
-**DO NOT DO THIS TO A NETWORK OR DEVICE YOU DO NOT OWN OR HAVE PERMISSION TO...**
-   
+:+1:**DO NOT DO THIS TO A NETWORK OR DEVICE YOU DO NOT OWN OR HAVE PERMISSION TO...**:+1:
+
+___
+
+### Cracking  and Connecting to a WEP Wifi Network
+
+- In order to crack a WEP, we need a large ammount of packets or a high volume network.
+
+- run aircrack-ng with the .cap file to crack the key
+
+   `aircrack-ng <name of .cap file>` 
+
+___
+
