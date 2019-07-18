@@ -106,3 +106,9 @@ ___
 
 - Lastly, we need to utilize aircrack-ng to try and crack the handshake against the password file
    `aircrack-ng <handshake capture file .cap> -w <password txt file>`
+
+___
+
+### Creating your own password wordbank
+
+- `crunch <min pass> <max pass> <Letters or numbers> -o <file name txt> -t <known format (he@@owor@d)> 
