@@ -117,3 +117,5 @@ ___
 ___
 
 # Network Hacking - Post Connection Attacks
+
+- `netdiscover -r <IP Range> (example 192.168.1.1/24)
