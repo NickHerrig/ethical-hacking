@@ -8,6 +8,8 @@ ___
 - [ ] Learn Something New.
 ___
 
+# Network Hacking - Gaining Access
+___
 ### Changing your device's MAC Address
 
 - First, ensure device is visible with `ifconfig` or `iwconfig`
@@ -112,3 +114,6 @@ ___
 ### Creating your own password wordbank
 
 - `crunch <min pass> <max pass> <Letters or numbers> -o <file name txt> -t <known format (he@@owor@d)> 
+___
+
+# Network Hacking - Post Connection Attacks
